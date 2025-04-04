@@ -92,7 +92,7 @@ void hashToHex(unsigned char *hash, char *hexStr) {
     hexStr[SHA256_BLOCK_SIZE * 2] = '\0';
 }
 
-// Add a new block to the blockchain
+// Chaining the Block
 void addBlock(const char* data) {
     Block *newBlock = malloc(sizeof(Block));
 
