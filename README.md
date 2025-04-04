@@ -10,9 +10,10 @@ Every block contains the hash of the previous block, hash of the current block, 
 When the user input a data formatted as a string, this will process the data to the block. The data will be hashed using SHA256 and 
 There will be 2 conditions after that:
 1. Best case is when the block is the genesis block, there will be no data of the previous hash of a block, so it will be set to 0000.
+   
 ![alt text](https://github.com/kumisaku/mini-blockchain-1/blob/main/img/genesis.png)
 
-3. The normal case is when the new block has been hashed, the block will store the hash of the previous hash of the block.
+2. The normal case is when the new block has been hashed, the block will store the hash of the previous hash of the block.
 ![alt text](https://github.com/kumisaku/mini-blockchain-1/blob/main/img/process.png)
 
 ## 2. Printing all the blocks
